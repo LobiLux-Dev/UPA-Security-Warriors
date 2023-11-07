@@ -1,9 +1,7 @@
-import PropTypes from 'prop-types'
+import { usePage } from '../../hooks'
 
-export const MainLayoutComponent = ({ children }) => {
-	return <main>{children}</main>
-}
+export const MainLayoutComponent = () => {
+	const page = usePage()
 
-MainLayoutComponent.propTypes = {
-	children: PropTypes.node.isRequired,
+	return <main>{page}</main>
 }

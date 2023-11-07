@@ -1,17 +1,11 @@
-import PropTypes from 'prop-types'
-
 import { FooterLayoutComponent, HeaderLayoutComponent, MainLayoutComponent } from './layout'
 
-export const LayoutComponent = ({ page }) => {
+export const LayoutComponent = () => {
 	return (
 		<>
 			<HeaderLayoutComponent />
-			<MainLayoutComponent>{page}</MainLayoutComponent>
+			<MainLayoutComponent />
 			<FooterLayoutComponent />
 		</>
 	)
-}
-
-LayoutComponent.propTypes = {
-	page: PropTypes.node.isRequired,
 }

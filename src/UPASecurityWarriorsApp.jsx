@@ -1,7 +1,6 @@
 import { ChakraProvider } from '@chakra-ui/react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
-import { LayoutComponent } from './components'
 import {
 	AntivirusAndVirusInfoPage,
 	HomePage,
@@ -12,42 +11,43 @@ import {
 	SafeNavigationInfoPage,
 	SocialMediaRisksInfoPage,
 } from './pages'
+import { PageProvider } from './providers'
 
 const routes = [
 	{
 		path: '/',
-		element: <LayoutComponent page={<HomePage />} />,
+		element: <PageProvider page={<HomePage />} />,
 	},
 	{
 		path: '/info',
 		children: [
 			{
 				path: 'antivirusandvirus',
-				element: <LayoutComponent page={<AntivirusAndVirusInfoPage />} />,
+				element: <PageProvider page={<AntivirusAndVirusInfoPage />} />,
 			},
 			{
 				path: 'passwords',
-				element: <LayoutComponent page={<PasswordsInfoPage />} />,
+				element: <PageProvider page={<PasswordsInfoPage />} />,
 			},
 			{
 				path: 'preventivemaintenance',
-				element: <LayoutComponent page={<PreventiveMaintenanceInfoPage />} />,
+				element: <PageProvider page={<PreventiveMaintenanceInfoPage />} />,
 			},
 			{
 				path: 'realcases',
-				element: <LayoutComponent page={<RealCasesInfoPage />} />,
+				element: <PageProvider page={<RealCasesInfoPage />} />,
 			},
 			{
 				path: 'responsibilities',
-				element: <LayoutComponent page={<ResponsibilitiesInfoPage />} />,
+				element: <PageProvider page={<ResponsibilitiesInfoPage />} />,
 			},
 			{
 				path: 'safenavigation',
-				element: <LayoutComponent page={<SafeNavigationInfoPage />} />,
+				element: <PageProvider page={<SafeNavigationInfoPage />} />,
 			},
 			{
 				path: 'socialmediarisks',
-				element: <LayoutComponent page={<SocialMediaRisksInfoPage />} />,
+				element: <PageProvider page={<SocialMediaRisksInfoPage />} />,
 			},
 		],
 	},
