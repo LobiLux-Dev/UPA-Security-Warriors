@@ -1,63 +1,26 @@
-import { ChakraProvider } from '@chakra-ui/react'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { ChakraProvider, extendTheme } from '@chakra-ui/react'
+import { RouterProvider } from 'react-router-dom'
 
-import {
-	AntivirusAndVirusInfoPage,
-	HomePage,
-	PasswordsInfoPage,
-	PreventiveMaintenanceInfoPage,
-	RealCasesInfoPage,
-	ResponsibilitiesInfoPage,
-	SafeNavigationInfoPage,
-	SocialMediaRisksInfoPage,
-} from './pages'
-import { PageProvider } from './providers'
+import { router } from './routes'
 
-const routes = [
-	{
-		path: '/',
-		element: <PageProvider page={<HomePage />} />,
+const theme = extendTheme({
+	config: {
+		initialColorMode: 'dark',
 	},
-	{
-		path: '/info',
-		children: [
-			{
-				path: 'antivirusandvirus',
-				element: <PageProvider page={<AntivirusAndVirusInfoPage />} />,
-			},
-			{
-				path: 'passwords',
-				element: <PageProvider page={<PasswordsInfoPage />} />,
-			},
-			{
-				path: 'preventivemaintenance',
-				element: <PageProvider page={<PreventiveMaintenanceInfoPage />} />,
-			},
-			{
-				path: 'realcases',
-				element: <PageProvider page={<RealCasesInfoPage />} />,
-			},
-			{
-				path: 'responsibilities',
-				element: <PageProvider page={<ResponsibilitiesInfoPage />} />,
-			},
-			{
-				path: 'safenavigation',
-				element: <PageProvider page={<SafeNavigationInfoPage />} />,
-			},
-			{
-				path: 'socialmediarisks',
-				element: <PageProvider page={<SocialMediaRisksInfoPage />} />,
-			},
-		],
+	colors: {
+		primary_x: '#FF6079',
+		primary_xx: '#FE3051',
+		dark_x: '#0A0A0A',
+		dark_xx: '#111111',
+		dark_xxx: '#222222',
+		muted: '#A1B0BF',
+		light_50: '#ffffff80',
 	},
-]
-
-const router = createBrowserRouter(routes)
+})
 
 export const UPASecurityWarriorsApp = () => {
 	return (
-		<ChakraProvider>
+		<ChakraProvider theme={theme}>
 			<RouterProvider router={router} />
 		</ChakraProvider>
 	)
