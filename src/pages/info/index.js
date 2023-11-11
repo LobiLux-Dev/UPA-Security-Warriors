@@ -1,7 +1,0 @@
-export * from './AntivirusAndVirusInfoPage'
-export * from './PasswordsInfoPage'
-export * from './PreventiveMaintenanceInfoPage'
-export * from './RealCasesInfoPage'
-export * from './ResponsibilitiesInfoPage'
-export * from './SafeNavigationInfoPage'
-export * from './SocialMediaRisksInfoPage'
