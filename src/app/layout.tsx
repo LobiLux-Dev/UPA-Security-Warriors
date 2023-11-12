@@ -8,7 +8,11 @@ export const metadata: Metadata = {
 		'Your go-to source for cybersecurity insights, antivirus solutions, and threat prevention. Explore the latest trends and protect what matters most with us!',
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+interface Props {
+	children: React.ReactNode
+}
+
+export default function RootLayout({ children }: Props) {
 	return (
 		<html lang="es">
 			<body>
