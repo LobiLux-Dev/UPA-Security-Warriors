@@ -1,10 +1,4 @@
-import { Mulish } from 'next/font/google'
-
 import { FooterSection, LogoLink } from './'
-
-const mulish = Mulish({
-	subsets: ['latin'],
-})
 
 const ProgrammersList = [
 	'José Luis Sánchez Vázquez',
@@ -17,7 +11,7 @@ const DesignersList = ['Jessica Ximena Medina Gutiérrez', 'Diego Vera Guerra']
 
 const Footer = () => (
 	<footer className="bg-white footer items-center justify-between px-10 text-neutral-content">
-		<div className={`${mulish.className} flex font-bold gap-5`}>
+		<div className="flex font-bold gap-5">
 			<FooterSection title="Programado por:" items={ProgrammersList} />
 			<FooterSection title="Diseñado por:" items={DesignersList} />
 		</div>
