@@ -33,7 +33,7 @@ export default function RootLayout({ children }: Props) {
 					</div>
 					<div className="flex-none">
 						<nav>
-							<ul className="flex flex-col gap-5 md:flex-row">
+							<ul className="flex flex-col gap-5 items-center md:flex-row">
 								<li>
 									<Link className="btn btn-ghost normal-case text-info text-xl" href="#home">
 										Inicio
