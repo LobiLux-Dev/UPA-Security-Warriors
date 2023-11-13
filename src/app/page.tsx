@@ -1,5 +1,11 @@
+import { Content } from '@/components/layout/content/Content'
+
 const HomePage = () => {
-	return <></>
+	return (
+		<>
+			<Content />
+		</>
+	)
 }
 
 export default HomePage

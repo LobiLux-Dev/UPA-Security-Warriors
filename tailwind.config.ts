@@ -23,7 +23,11 @@ const config = {
 	} satisfies DaisyUIConfig,
 	plugins: [DaisyUI],
 	theme: {
-		extend: {},
+		extend: {
+			height: {
+				main: "calc(100vh - 64px)"
+			}
+		},
 	},
 } satisfies TailwindCSSConfig
 

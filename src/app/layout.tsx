@@ -1,4 +1,4 @@
-import { Mulish } from 'next/font/google'
+import { Content, Mulish } from 'next/font/google'
 import type { Metadata } from 'next'
 
 import { Footer, Header } from '@/components/layout'
