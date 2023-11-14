@@ -1,35 +1,36 @@
 {
 	"name": "upa-security-warriors",
-	"version": "0.1.0",
 	"private": true,
+	"version": "0.0.0",
+	"type": "module",
 	"scripts": {
-		"dev": "next dev",
-		"build": "next build",
-		"start": "next start",
-		"lint": "next lint",
-		"format": "prettier --write ./src",
+		"dev": "vite",
+		"build": "vite build",
+		"lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+		"preview": "vite preview",
+		"format": "prettier --write .",
 		"prepare": "husky install"
 	},
 	"dependencies": {
-		"@types/uuid": "^9.0.7",
-		"next": "14.0.2",
-		"react": "^18",
-		"react-dom": "^18",
-		"react-icons": "^4.11.0",
-		"uuid": "^9.0.1"
+		"@chakra-ui/react": "^2.8.1",
+		"@emotion/react": "^11.11.1",
+		"@emotion/styled": "^11.11.0",
+		"framer-motion": "^10.16.4",
+		"prop-types": "^15.8.1",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-router-dom": "^6.18.0"
 	},
 	"devDependencies": {
-		"@types/node": "^20",
-		"@types/react": "^18",
-		"@types/react-dom": "^18",
-		"autoprefixer": "^10.0.1",
-		"daisyui": "^3.9.4",
-		"eslint": "^8",
-		"eslint-config-next": "14.0.2",
+		"@types/react": "^18.2.15",
+		"@types/react-dom": "^18.2.7",
+		"@vitejs/plugin-react-swc": "^3.3.2",
+		"eslint": "^8.45.0",
+		"eslint-plugin-react": "^7.32.2",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"eslint-plugin-react-refresh": "^0.4.3",
 		"husky": "^8.0.3",
-		"postcss": "^8",
 		"prettier": "^3.0.3",
-		"tailwindcss": "^3.3.0",
-		"typescript": "^5"
+		"vite": "^4.4.5"
 	}
 }
