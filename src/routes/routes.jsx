@@ -16,41 +16,39 @@ import { PageProvider } from '../providers'
  */
 export const routes = [
 	{
-		path: '/',
+		index: true,
 		element: <PageProvider page={<HomePage />} />,
+	},
+	{
+		path: 'info',
 		children: [
 			{
-				path: 'info',
-				children: [
-					{
-						path: 'antivirusandvirus',
-						element: <PageProvider page={<AntivirusAndVirusInfoPage />} />,
-					},
-					{
-						path: 'passwords',
-						element: <PageProvider page={<PasswordsInfoPage />} />,
-					},
-					{
-						path: 'preventivemaintenance',
-						element: <PageProvider page={<PreventiveMaintenanceInfoPage />} />,
-					},
-					{
-						path: 'realcases',
-						element: <PageProvider page={<RealCasesInfoPage />} />,
-					},
-					{
-						path: 'responsibilities',
-						element: <PageProvider page={<ResponsibilitiesInfoPage />} />,
-					},
-					{
-						path: 'safenavigation',
-						element: <PageProvider page={<SafeNavigationInfoPage />} />,
-					},
-					{
-						path: 'socialmediarisks',
-						element: <PageProvider page={<SocialMediaRisksInfoPage />} />,
-					},
-				],
+				path: 'antivirusandvirus',
+				element: <PageProvider page={<AntivirusAndVirusInfoPage />} />,
+			},
+			{
+				path: 'passwords',
+				element: <PageProvider page={<PasswordsInfoPage />} />,
+			},
+			{
+				path: 'preventivemaintenance',
+				element: <PageProvider page={<PreventiveMaintenanceInfoPage />} />,
+			},
+			{
+				path: 'realcases',
+				element: <PageProvider page={<RealCasesInfoPage />} />,
+			},
+			{
+				path: 'responsibilities',
+				element: <PageProvider page={<ResponsibilitiesInfoPage />} />,
+			},
+			{
+				path: 'safenavigation',
+				element: <PageProvider page={<SafeNavigationInfoPage />} />,
+			},
+			{
+				path: 'socialmediarisks',
+				element: <PageProvider page={<SocialMediaRisksInfoPage />} />,
 			},
 		],
 	},
