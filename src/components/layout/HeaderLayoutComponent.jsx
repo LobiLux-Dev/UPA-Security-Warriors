@@ -1,7 +1,3 @@
-
 export const HeaderLayoutComponent = () => {
-	return (
-		<>
-		</>
-	)
+	return <></>
 }
