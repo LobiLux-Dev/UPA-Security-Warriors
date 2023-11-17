@@ -7,7 +7,9 @@ export function NavBar() {
 			<div className="navbar sticky top-0 z-10">
 				<div className="flex-1">
 					<img src={logo} alt="logo" className="w-20" />
-					<Link to={"/"} className="btn btn-ghost text-lg">UPA Security Warriors</Link>
+					<Link to={'/'} className="btn btn-ghost text-lg">
+						UPA Security Warriors
+					</Link>
 				</div>
 				<div className="flex-none">
 					<div className="drawer drawer-end">
@@ -42,7 +44,7 @@ export function NavBar() {
 									<Link to={'/redes-sociales'}>Riesgo en redes sociales</Link>
 								</li>
 								<li>
-									<Link to={"/mantenimiento"}>Mantenimiento a equipos</Link>
+									<Link to={'/mantenimiento'}>Mantenimiento a equipos</Link>
 								</li>
 								<li>
 									<Link to={'/casos-reales'}>Casos reales</Link>

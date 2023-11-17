@@ -6,19 +6,13 @@ function Card({ title, description, img }) {
 	return (
 		<div className="card w-96 bg-[#111111] shadow-xl">
 			<div className="card-body">
-			<div className="w-16 h-16 rounded-full bg-[#FE3051] grid place-items-center">
+				<div className="w-16 h-16 rounded-full bg-[#FE3051] grid place-items-center">
 					<BsClock style={style} />
 				</div>
 				<h2 className="card-title text-xl">{title}</h2>
-				<p className='text-sm'>{description}</p>
+				<p className="text-sm">{description}</p>
 			</div>
-			<figure>
-				{img ? (
-        <img src={img} alt={img}/>
-      ) : (
-        ''
-      )}
-			</figure>
+			<figure>{img ? <img src={img} alt={img} /> : ''}</figure>
 		</div>
 	)
 }

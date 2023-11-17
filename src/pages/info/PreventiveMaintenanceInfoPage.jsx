@@ -28,18 +28,22 @@ export const PreventiveMaintenanceInfoPage = () => {
 
 				<div className="col-span-2 container">
 					<div className="flex flex-col items-center gap-y-5">
-						<h2 className='text-4xl'>
+						<h2 className="text-4xl">
 							Aprende mas sobre el <span className="text-[#FE3051]">mantenimiento preventivo</span>
 						</h2>
 						<p>Descubre que es un mantenimiento, como se emplea y cada cuando se debe de hacer</p>
-						<div className='container flex justify-around'>
+						<div className="container flex justify-around">
 							<Card
-								title={"¿Que es el mantenimiento preventivo?"}
-								description={"El mantenimiento preventivo en informática consiste en realizar tareas periódicas, como limpieza física, actualización de software, copias de seguridad y monitorización del rendimiento, para prevenir problemas en los equipos y sistemas informáticos. El objetivo es evitar fallos, maximizar la disponibilidad y fiabilidad de los equipos, y reducir los costos asociados con el mantenimiento correctivo."}
+								title={'¿Que es el mantenimiento preventivo?'}
+								description={
+									'El mantenimiento preventivo en informática consiste en realizar tareas periódicas, como limpieza física, actualización de software, copias de seguridad y monitorización del rendimiento, para prevenir problemas en los equipos y sistemas informáticos. El objetivo es evitar fallos, maximizar la disponibilidad y fiabilidad de los equipos, y reducir los costos asociados con el mantenimiento correctivo.'
+								}
 							/>
 							<Card
-								title={"¿Como y cuando se emplea el mantenimiento?"}
-								description={"El mantenimiento preventivo se realiza llevando a cabo tareas como la limpieza física de los equipos, la actualización de software, la realización de copias de seguridad, la optimización del sistema operativo y la monitorización del rendimiento de manera regular y de acuerdo a un calendario predefinido."}
+								title={'¿Como y cuando se emplea el mantenimiento?'}
+								description={
+									'El mantenimiento preventivo se realiza llevando a cabo tareas como la limpieza física de los equipos, la actualización de software, la realización de copias de seguridad, la optimización del sistema operativo y la monitorización del rendimiento de manera regular y de acuerdo a un calendario predefinido.'
+								}
 							/>
 						</div>
 					</div>
