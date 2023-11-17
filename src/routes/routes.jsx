@@ -20,36 +20,31 @@ export const routes = [
 		element: <PageProvider page={<HomePage />} />,
 	},
 	{
-		path: 'info',
-		children: [
-			{
-				path: 'antivirusandvirus',
-				element: <PageProvider page={<AntivirusAndVirusInfoPage />} />,
-			},
-			{
-				path: 'passwords',
-				element: <PageProvider page={<PasswordsInfoPage />} />,
-			},
-			{
-				path: 'preventivemaintenance',
-				element: <PageProvider page={<PreventiveMaintenanceInfoPage />} />,
-			},
-			{
-				path: 'realcases',
-				element: <PageProvider page={<RealCasesInfoPage />} />,
-			},
-			{
-				path: 'responsibilities',
-				element: <PageProvider page={<ResponsibilitiesInfoPage />} />,
-			},
-			{
-				path: 'safenavigation',
-				element: <PageProvider page={<SafeNavigationInfoPage />} />,
-			},
-			{
-				path: 'socialmediarisks',
-				element: <PageProvider page={<SocialMediaRisksInfoPage />} />,
-			},
-		],
+		path: '/antivirus-virus',
+		element: <PageProvider page={<AntivirusAndVirusInfoPage />} />,
+	},
+	{
+		path: '/passwords',
+		element: <PageProvider page={<PasswordsInfoPage />} />,
+	},
+	{
+		path: '/mantenimiento',
+		element: <PageProvider page={<PreventiveMaintenanceInfoPage />} />,
+	},
+	{
+		path: '/casos-reales',
+		element: <PageProvider page={<RealCasesInfoPage />} />,
+	},
+	{
+		path: '/responsabilidades',
+		element: <PageProvider page={<ResponsibilitiesInfoPage />} />,
+	},
+	{
+		path: '/navegacion-segura',
+		element: <PageProvider page={<SafeNavigationInfoPage />} />,
+	},
+	{
+		path: '/redes-sociales',
+		element: <PageProvider page={<SocialMediaRisksInfoPage />} />,
 	},
 ]

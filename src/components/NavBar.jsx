@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import logo from '../assets/logo.svg'
 
 export function NavBar() {
@@ -6,7 +7,7 @@ export function NavBar() {
 			<div className="navbar sticky top-0 z-10">
 				<div className="flex-1">
 					<img src={logo} alt="logo" className="w-20" />
-					<a className="btn btn-ghost text-lg">UPA Security Warriors</a>
+					<Link to={"/"} className="btn btn-ghost text-lg">UPA Security Warriors</Link>
 				</div>
 				<div className="flex-none">
 					<div className="drawer drawer-end">
@@ -29,25 +30,25 @@ export function NavBar() {
 							<ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
 								{/* Sidebar content here */}
 								<li>
-									<a>Contraseñas</a>
+									<Link to={'/passwords'}>Contraseñas</Link>
 								</li>
 								<li>
-									<a>Antivirus y virus</a>
+									<Link to={'/antivirus-virus'}>Antivirus y virus</Link>
 								</li>
 								<li>
-									<a>Navegación segura</a>
+									<Link to={'/navegacion-segura'}>Navegación segura</Link>
 								</li>
 								<li>
-									<a>Riesgo en redes sociales</a>
+									<Link to={'/redes-sociales'}>Riesgo en redes sociales</Link>
 								</li>
 								<li>
-									<a>Mantenimiento a equipos</a>
+									<Link to={"/mantenimiento"}>Mantenimiento a equipos</Link>
 								</li>
 								<li>
-									<a>Casos reales</a>
+									<Link to={'/casos-reales'}>Casos reales</Link>
 								</li>
 								<li>
-									<a>Responsabilidades</a>
+									<Link to={'/responsabilidades'}>Responsabilidades</Link>
 								</li>
 							</ul>
 						</div>

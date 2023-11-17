@@ -1,69 +1,50 @@
+import { HeaderTitle } from '../../components/HeaderTitle'
+import { NavBar } from '../../components/NavBar'
+import Card from '../mantenimiento/Card'
+import hardware from '../../assets/hardware.png'
+import software from '../../assets/software.png'
+
 export const PreventiveMaintenanceInfoPage = () => {
 	return (
-		<>
-			<h1>Mantenimiento</h1>
+		<div className="bg-black">
+			<NavBar />
+			<HeaderTitle title="Mantenimiento Preventivo" />
 
-			<p>
-				<span>Mantenimiento correctivo de software: </span>El mantenimiento correctivo del software es la forma clásica
-				y típica de mantenimiento (para el software y cualquier otra cosa). El mantenimiento de software correctivo es
-				necesario cuando algo sale mal en una pieza de software, incluidos fallos y errores. Estos pueden tener un
-				impacto generalizado en la funcionalidad del software en general y, por lo tanto, deben abordarse lo antes
-				posible.
-			</p>
-			<p>
-				<span>Mantenimiento preventivo de software: </span>El mantenimiento preventivo de software está mirando hacia el
-				futuro para que su software pueda seguir funcionando como se desee durante el mayor tiempo posible. Esto incluye
-				realizar los cambios necesarios, actualizaciones, adaptaciones y más. El mantenimiento preventivo del software
-				puede abordar pequeños problemas que en un momento dado pueden carecer de importancia, pero pueden convertirse
-				en problemas mayores en el futuro. Estos se denominan fallas latentes que deben detectarse y corregirse para
-				asegurarse de que no se conviertan en fallas efectivas.
-			</p>
-			<p>
-				<span>Mantenimiento perfectivo de software: </span>El mantenimiento perfectivo de software tiene como objetivo
-				ajustar el software agregando nuevas características según sea necesario y eliminando características que son
-				irrelevantes o no efectivas en el software dado. Este proceso mantiene el software relevante a medida que el
-				mercado y las necesidades del usuario cambian.
-			</p>
-			<p>
-				<span>Mantenimiento adaptativo de software: </span>El Mantenimiento adaptativo de software tiene que ver con las
-				tecnologías cambiantes, así como con las políticas y reglas relacionadas con su software. Las cuales incluyen
-				cambios en el sistema operativo, almacenamiento en la nube, hardware, etc. Cuando se realizan estos cambios, su
-				software debe adaptarse para cumplir adecuadamente los nuevos requisitos y continuar funcionando bien.
-			</p>
-			<p>
-				<span>¿Que es el software? </span>El software es un conjunto de programas, instrucciones y datos que controlan
-				el funcionamiento de una computadora o dispositivo electrónico. Es la parte no tangible de un sistema
-				informático y se encarga de ejecutar tareas y aplicaciones, como procesamiento de datos, gestión de hardware y
-				proporcionar funcionalidad a los usuarios. El software se divide generalmente en dos categorías: software de
-				sistema (que controla el hardware) y software de aplicación (que realiza tareas específicas para el usuario)
-			</p>
-			<p>
-				<span>¿Que es el hardware? </span>El hardware esta compuesto de componentes que hacen el funcionamiento de un
-				equipo que empieza desde la tarjeta madre que es la que hace que todos los componentes se puedan conectar, como
-				por ejemplo esta formada por un procesador, memoria de disco duro, memoria ram, memoria ssd o m.2y opcionalmente
-				una tarjeta grafica por separado a los gráficos integrados del procesador.
-			</p>
-			<p>
-				<span>Mantenimiento a equipos de trabajo: </span>Es una serie de tareas y procedimientos que consisten en la
-				inspección de anomalías, limpieza y sustitución de piezas, materiales y sistemas usados, que ayuden a evitar
-				fallos en el equipo de cómputo y garantizar que se encuentran funcionando de acuerdo a sus capacidades.
-			</p>
-			<p>
-				<span>Mantenimiento del hardware: </span>El mantenimiento del hardware se trata principalmente de estar
-				limpiando constantemente el polvo generado por el uso de la computadora, también por eso se procura tener
-				apagado el equipo cuando no este usándose. También por otro lado el procesador después de mucho uso se tiene que
-				cambiar la pasta térmica ya que este mismo se eleva a mucha temperatura cada que se sobrecarga y necesita su
-				mantenimiento cada 2 meses dependiendo del uso que le des al equipo.
-			</p>
+			<div className="grid grid-cols-2 grid-rows-2 p-5 place-items-center">
+				<Card
+					title="Mantenimiento de hadware"
+					description="El mantenimiento del hardware se trata principalmente de estar limpiando constantemente el polvo generado por el uso de la computadora, también por eso se procura tener apagado el equipo cuando no este usándose.
 
-			<span>Ventajas de tener un buen plan de mantenimiento:</span>
+					También se realizan una serie de tareas y procedimientos que consisten en la inspección de anomalías, limpieza y sustitución de piezas, materiales y sistemas usados, que ayuden a evitar fallos en el equipo de cómputo y garantizar que se encuentran funcionando de acuerdo a sus capacidades.
+					"
+					img={hardware}
+				/>
 
-			<ul>
-				<li>Alargas la vida útil de tu equipo</li>
-				<li>Previenes ataques de virus cibernéticos</li>
-				<li>Tu equipo será rápido al ejecutar programas</li>
-				<li>No tendrás sobre calentamiento</li>
-			</ul>
-		</>
+				<Card
+					title="Mantenimiento de software"
+					description="El mantenimiento del software de una computadora es crucial para su eficiencia y seguridad. Esto incluye actualizar el sistema operativo y el software, mantener programas antivirus y antimalware actualizados, limpiar y desfragmentar el disco duro, realizar copias de seguridad, monitorear el rendimiento, eliminar software innecesario, actualizar controladores y prestar atención a las advertencias de seguridad. Al seguir estas pautas, se puede mantener la computadora en óptimas condiciones."
+					img={software}
+				/>
+
+				<div className="col-span-2 container">
+					<div className="flex flex-col items-center gap-y-5">
+						<h2 className='text-4xl'>
+							Aprende mas sobre el <span className="text-[#FE3051]">mantenimiento preventivo</span>
+						</h2>
+						<p>Descubre que es un mantenimiento, como se emplea y cada cuando se debe de hacer</p>
+						<div className='container flex justify-around'>
+							<Card
+								title={"¿Que es el mantenimiento preventivo?"}
+								description={"El mantenimiento preventivo en informática consiste en realizar tareas periódicas, como limpieza física, actualización de software, copias de seguridad y monitorización del rendimiento, para prevenir problemas en los equipos y sistemas informáticos. El objetivo es evitar fallos, maximizar la disponibilidad y fiabilidad de los equipos, y reducir los costos asociados con el mantenimiento correctivo."}
+							/>
+							<Card
+								title={"¿Como y cuando se emplea el mantenimiento?"}
+								description={"El mantenimiento preventivo se realiza llevando a cabo tareas como la limpieza física de los equipos, la actualización de software, la realización de copias de seguridad, la optimización del sistema operativo y la monitorización del rendimiento de manera regular y de acuerdo a un calendario predefinido."}
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	)
 }
