@@ -60,7 +60,11 @@ export function Avira() {
 					/>
 				</div>
 
-				<a href="https://www.avira.com/es/free-antivirus-windows" target="blank" className="btn bg-[#FE3051] w-full my-10">
+				<a
+					href="https://www.avira.com/es/free-antivirus-windows"
+					target="blank"
+					className="btn bg-[#FE3051] w-full my-10"
+				>
 					Comprar
 				</a>
 			</div>
