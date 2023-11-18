@@ -15,7 +15,9 @@ export function Header() {
 				</p>
 
 				<div>
-					<Link to={"/passwords"} className="btn bg-[#FE3051] text-black hover:bg-[#FE3051] hover:border-[#FE3051]">Conocer más</Link>
+					<Link to={'/passwords'} className="btn bg-[#FE3051] text-black hover:bg-[#FE3051] hover:border-[#FE3051]">
+						Conocer más
+					</Link>
 				</div>
 
 				<div className="flex items-center container text-[#FE3051] gap-5">
