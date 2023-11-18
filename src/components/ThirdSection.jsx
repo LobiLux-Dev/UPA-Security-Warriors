@@ -2,6 +2,7 @@ import first from '../assets/first.svg'
 import second from '../assets/second.svg'
 import { BsClock, BsArrowRight } from 'react-icons/bs'
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 
 function Gradients() {
 	return (
@@ -12,7 +13,7 @@ function Gradients() {
 	)
 }
 
-function Card({ title, description }) {
+function Card({ title, description, link }) {
 	const style = { fontSize: '3em' }
 	return (
 		<div className="card bg-[#111111] w-96 shadow-xl text-white">
@@ -24,9 +25,9 @@ function Card({ title, description }) {
 				<p className="mb-5">{description}</p>
 
 				<div className="card-actions">
-					<button className="btn btn-ghost text-[#FE3051]">
+					<Link to={link} className="btn btn-ghost text-[#FE3051]">
 						Conocer más <BsArrowRight />{' '}
-					</button>
+					</Link>
 				</div>
 			</div>
 		</div>
@@ -52,6 +53,7 @@ function ThirdSection() {
 					description={
 						'Es un sistema de seguridad informatica diseñada para proteger las computadoras o dispositivos electronicos de posibles ataques de softwares maliciosos.'
 					}
+					link={'/antivirus-virus'}
 				/>
 
 				<Card
@@ -59,6 +61,7 @@ function ThirdSection() {
 					description={
 						'Las contraseñas seguras sirven para defenderte de ciberataques y reducir el riesgo de una vulneracion de seguridad y evita el robo de identidad.'
 					}
+					link={'/passwords'}
 				/>
 
 				<Card
@@ -66,6 +69,7 @@ function ThirdSection() {
 					description={
 						'Llega impedir que alguien acceda a informacion personal guardada como el historial de navegacion los datos que se usasn para autocompletar formularios entre otros.'
 					}
+					link={'/navegacion-segura'}
 				/>
 			</div>
 
@@ -79,6 +83,7 @@ function ThirdSection() {
 Card.propTypes = {
 	title: PropTypes.string.isRequired,
 	description: PropTypes.string.isRequired,
+	link: PropTypes.string.isRequired,
 }
 
 export default ThirdSection
