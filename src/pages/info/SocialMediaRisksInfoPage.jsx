@@ -26,8 +26,8 @@ export const SocialMediaRisksInfoPage = () => {
 						<thead>
 							<tr>
 								<th></th>
-								<th className='text-white'>Telegram</th>
-								<th className='text-white'>WhatsApp</th>
+								<th className="text-white">Telegram</th>
+								<th className="text-white">WhatsApp</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -69,7 +69,6 @@ export const SocialMediaRisksInfoPage = () => {
 								<td>Si</td>
 							</tr>
 
-
 							{/* row 5 */}
 							<tr className="bg-base-200">
 								<th>Límite de participantes (grupos)</th>
@@ -92,7 +91,7 @@ export const SocialMediaRisksInfoPage = () => {
 							{/* row 8 */}
 							<tr className="bg-base-200">
 								<th>Autenticación Biométrica</th>
-								<td>Si (Huella digital  reconocimiento facial)</td>
+								<td>Si (Huella digital reconocimiento facial)</td>
 								<td>No</td>
 							</tr>
 							{/* row 9 */}
@@ -107,7 +106,6 @@ export const SocialMediaRisksInfoPage = () => {
 								<td>No</td>
 								<td>Si</td>
 							</tr>
-
 
 							{/* row 11 */}
 							<tr className="bg-base-200">

@@ -1,6 +1,3 @@
-
 export function Avast() {
-	return (
-		<div>Avast</div>
-	)
+	return <div>Avast</div>
 }

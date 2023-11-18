@@ -1,6 +1,3 @@
-
 export function Karspersky() {
-	return (
-		<div>Karspersky</div>
-	)
+	return <div>Karspersky</div>
 }

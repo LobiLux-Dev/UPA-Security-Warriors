@@ -45,10 +45,16 @@ export const AntivirusAndVirusInfoPage = () => {
 					>
 						Karspersky
 					</Link>
-					<Link to={'/antivirus-virus/avast'} className="btn bg-green-400 hover:bg-green-400 hover:border-green-400 py-2 px-4 rounded-lg text-black">
+					<Link
+						to={'/antivirus-virus/avast'}
+						className="btn bg-green-400 hover:bg-green-400 hover:border-green-400 py-2 px-4 rounded-lg text-black"
+					>
 						Avast
 					</Link>
-					<Link to={'/antivirus-virus/avira'} className="btn bg-green-400 hover:bg-green-400 hover:border-green-400 py-2 px-4 rounded-lg text-black">
+					<Link
+						to={'/antivirus-virus/avira'}
+						className="btn bg-green-400 hover:bg-green-400 hover:border-green-400 py-2 px-4 rounded-lg text-black"
+					>
 						Avira
 					</Link>
 				</div>

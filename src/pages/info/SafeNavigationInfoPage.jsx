@@ -6,7 +6,7 @@ import redes from '../../assets/redes.png'
 
 export const SafeNavigationInfoPage = () => {
 	return (
-		<div className='bg-black'>
+		<div className="bg-black">
 			<NavBar />
 			<HeaderTitle title={'Navegación segura'} />
 			<div className="grid grid-cols-2 grid-rows-3 w-4/5 m-auto py-10">
@@ -42,7 +42,7 @@ export const SafeNavigationInfoPage = () => {
 
 				<div className="flex flex-col items-center col-span-2">
 					<h3>Recomendaciones</h3>
-					<ul className='list-disc'>
+					<ul className="list-disc">
 						<li>
 							Abtenerse de ingresar informacion confidencial o hacer transacciones en paginas que no tengan certificado
 							SSL (HTTPS).
