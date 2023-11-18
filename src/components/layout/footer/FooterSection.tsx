@@ -8,7 +8,7 @@ interface Props {
 export const FooterSection: React.FC<Props> = ({ items, title }) => {
 	return (
 		<section title={title}>
-			<h3 className="font-semibold mb-2 text-gray-900 text-sm uppercase">{title} </h3>
+			<h3 className="font-semibold mb-2 text-sm uppercase">{title} </h3>
 			<ul className="font-medium text-gray-600">
 				{items.map(item => (
 					<li key={uuid()}>{item}</li>

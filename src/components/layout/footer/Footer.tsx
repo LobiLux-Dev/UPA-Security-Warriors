@@ -11,7 +11,7 @@ const ProgrammerList: string[] = [
 
 export const Footer: React.FC = () => {
 	return (
-		<footer className="bg-white">
+		<footer className="bg-white text-gray-900">
 			<div className="lg:py-8 max-w-screen mx-auto p-4 w-full">
 				<div className="gap-8 grid grid-cols-1 lg:grid-cols-4 sm:gap-6 sm:grid-cols-2">
 					<FooterSection title="Diseñado por:" items={DesignerList} />

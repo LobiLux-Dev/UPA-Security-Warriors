@@ -12,6 +12,7 @@ export const MenuItem: React.FC<Props> = ({ href, text, handleMenu }) => {
 			className="duration-300 hover:text-gray-400 my-2 transition-colors transform"
 			href={href}
 			onClick={handleMenu}
+			title={text}
 		>
 			{text}
 		</Link>
