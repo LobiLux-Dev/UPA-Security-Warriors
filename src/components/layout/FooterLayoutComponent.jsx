@@ -1,3 +1,6 @@
+import upa from '../../assets/upa.svg'
+import sistemas from '../../assets/sistemas.svg'
+
 export const FooterLayoutComponent = () => {
 	return (
 		<footer className="bg-white container grid grid-cols-4 text-black p-5">
@@ -13,8 +16,12 @@ export const FooterLayoutComponent = () => {
 				<p>Jose Luis Sanchez Vazquez</p>
 				<p>Erik Rafael Martinez Ponce</p>
 			</div>
-			<div></div>
-			<div></div>
+			<div>
+				<img src={upa} alt="upa" />
+			</div>
+			<div>
+				<img src={sistemas} alt="sistemas" />
+			</div>
 		</footer>
 	)
 }

@@ -58,6 +58,14 @@ export const AntivirusAndVirusInfoPage = () => {
 						Avira
 					</Link>
 				</div>
+				<p>Los Virus más comunes</p>
+				<ul className="flex container mb-20 justify-evenly list-disc">
+					<li>Nimda</li>
+					<li>Stuxnet</li>
+					<li>SQL Slammer</li>
+					<li>Gusanos (La propagación descontrolada)</li>
+					<li>Troyanos</li>
+				</ul>
 			</div>
 		</div>
 	)
