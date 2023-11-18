@@ -1,6 +1,9 @@
 import {
 	AntivirusAndVirusInfoPage,
+	Avast,
+	Avira,
 	HomePage,
+	Karspersky,
 	PasswordsInfoPage,
 	PreventiveMaintenanceInfoPage,
 	RealCasesInfoPage,
@@ -22,6 +25,18 @@ export const routes = [
 	{
 		path: '/antivirus-virus',
 		element: <PageProvider page={<AntivirusAndVirusInfoPage />} />,
+	},
+	{
+		path: '/antivirus-virus/karspersky',
+		element: <PageProvider page={<Karspersky />} />,
+	},
+	{
+		path: '/antivirus-virus/avast',
+		element: <PageProvider page={<Avast />} />,
+	},
+	{
+		path: '/antivirus-virus/avira',
+		element: <PageProvider page={<Avira />} />,
 	},
 	{
 		path: '/passwords',
