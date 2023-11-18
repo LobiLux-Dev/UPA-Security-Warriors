@@ -56,7 +56,7 @@ interface Props {
 const RootLayout: React.FC<Props> = ({ children }) => {
 	return (
 		<html lang="es">
-			<body className={`${mulish.className} bg-base flex flex-col min-h-screen`}>
+			<body className={`${mulish.className} bg-base flex flex-col min-h-screen text-white`}>
 				<Header />
 				<main className="flex-1">{children}</main>
 				<Footer />
