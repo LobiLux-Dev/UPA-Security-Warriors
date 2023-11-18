@@ -35,9 +35,7 @@ export function Karspersky() {
 				<div className="flex container justify-between gap-5">
 					<Card
 						title={'Ventajas de Kaspersky'}
-						description={
-							'Rendimiento eficiente, firewall y protección de identidad, interfaz intuitiva'
-						}
+						description={'Rendimiento eficiente, firewall y protección de identidad, interfaz intuitiva'}
 					/>
 					<Card
 						title={'Desventajas de Kaspersky'}
@@ -54,8 +52,8 @@ export function Karspersky() {
 				</div>
 
 				<a href="https://acortar.link/mhr1oi" target="blank" className="btn bg-[#FE3051] w-full my-10">
-						Comprar
-					</a>
+					Comprar
+				</a>
 			</div>
 		</div>
 	)
