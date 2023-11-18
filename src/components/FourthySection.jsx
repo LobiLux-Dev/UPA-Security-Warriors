@@ -42,7 +42,7 @@ function FourthySection() {
 			<p className="text-xl">
 				Tenemos la ultima información sobre antivirus, la importancia de una contraseña segura y navegación segura...
 			</p>
-			<div className="grid grid-cols-3 mt-16 gap-5">
+			<div className="grid grid-cols-3	 mt-16 gap-5">
 				<Card
 					title={'Riesgo de las Redes Sociales'}
 					description={

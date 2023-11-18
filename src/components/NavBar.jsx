@@ -49,9 +49,6 @@ export function NavBar() {
 								<li>
 									<Link to={'/casos-reales'}>Casos reales</Link>
 								</li>
-								<li>
-									<Link to={'/responsabilidades'}>Responsabilidades</Link>
-								</li>
 							</ul>
 						</div>
 					</div>
