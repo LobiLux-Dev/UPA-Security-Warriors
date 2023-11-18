@@ -8,7 +8,7 @@ interface Props {
 
 export const LogoLink: React.FC<Props> = ({ alt, href, src }) => {
 	return (
-		<section>
+		<section className='mx-auto'>
 			<div>
 				<a href={href}>
 					<Image alt={alt} height={150} src={src} title={alt} width={250} />
