@@ -15,11 +15,11 @@ function CardCustom({ title, description }) {
 					<BsClock style={style} />
 				</div>
 				<h2 className="card-title text-xl">{title}</h2>
-				<ul className="text-sm list-disc">{
-					description.map((item, index) => {
+				<ul className="text-sm list-disc">
+					{description.map((item, index) => {
 						return <li key={index}>{item}</li>
-					})
-				}</ul>
+					})}
+				</ul>
 			</div>
 		</div>
 	)
@@ -32,13 +32,13 @@ CardCustom.propTypes = {
 
 export const PasswordsInfoPage = () => {
 	const recomendaciones = [
-		"Utilizar 12 caracteres o más, combinando letras, números y símbolos para mayor fortaleza.",
-		"Evitar información personal o palabras comunes y predecibles.",
-		"No reutilizar contraseñas en múltiples cuentas. Es mejor crear una única para cada cuenta.",
-		"Cambiar las contraseñas regularmente, al menos cada pocos meses.",
-		"Usar administradores de contraseñas para generar y almacenar credenciales únicas.",
-		"Activar la autenticación de dos factores cuando esté disponible para agregar una capa adicional de protección.",
-		"Nunca compartir las contraseñas con otras personas, para prevenir accesos no autorizados."
+		'Utilizar 12 caracteres o más, combinando letras, números y símbolos para mayor fortaleza.',
+		'Evitar información personal o palabras comunes y predecibles.',
+		'No reutilizar contraseñas en múltiples cuentas. Es mejor crear una única para cada cuenta.',
+		'Cambiar las contraseñas regularmente, al menos cada pocos meses.',
+		'Usar administradores de contraseñas para generar y almacenar credenciales únicas.',
+		'Activar la autenticación de dos factores cuando esté disponible para agregar una capa adicional de protección.',
+		'Nunca compartir las contraseñas con otras personas, para prevenir accesos no autorizados.',
 	]
 	return (
 		<div className="bg-black">
@@ -61,10 +61,7 @@ export const PasswordsInfoPage = () => {
 						}
 						img={img1}
 					/>
-					<CardCustom
-						title={'Recomendaciones'}
-						description={recomendaciones}
-					/>
+					<CardCustom title={'Recomendaciones'} description={recomendaciones} />
 					<Card
 						title={'¿Donde guardar tus contraseñas?'}
 						description={
