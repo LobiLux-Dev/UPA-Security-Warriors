@@ -1,7 +1,7 @@
 import { Mulish } from 'next/font/google'
 import type { Metadata } from 'next'
 
-import { Footer } from '@/components/layout'
+import { Footer, Header } from '@/components/layout'
 
 import './globals.css'
 
@@ -57,7 +57,7 @@ const RootLayout: React.FC<Props> = ({ children }) => {
 	return (
 		<html lang="es">
 			<body className={`${mulish.className} bg-base flex flex-col min-h-screen`}>
-				<header></header>
+				<Header />
 				<main className="flex-1">{children}</main>
 				<Footer />
 			</body>
