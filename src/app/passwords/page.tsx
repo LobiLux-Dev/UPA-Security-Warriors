@@ -20,7 +20,7 @@ const PasswordsPage: React.FC = () => {
 					</p>
 				</Card>
 				<Card title="Recomendaciones">
-					<ul className="list-disc">
+					<ul className="list-disc px-5">
 						<li>Utilizar 12 caracteres o más, combinando letras, números y símbolos para mayor fortaleza.</li>
 						<li>Evitar información personal o palabras comunes y predecibles.</li>
 						<li>No reutilizar contraseñas en múltiples cuentas. Es mejor crear una única para cada cuenta.</li>
