@@ -31,15 +31,21 @@ const AntiVirusAndVirusPage: React.FC = () => {
 			<div className="container mx-auto">
 				<h3 className="font-bold text-lg text-center mb-10">Te recomendamos los mejores antivirus</h3>
 				<div className="grid grid-cols-1 grid-rows-3 sm:grid-cols-3 sm:grid-rows-1 gap-5">
-					<Link href="/antivirusandvirus/kaspersky">
-						<Image alt="Kaspersky" className="inline" height={50} src="/kaspersky.png" width={200} />
-					</Link>
-					<Link href="/antivirusandvirus/avast">
-						<Image alt="Avast" className="inline" height={50} src="/avast.png" width={200} />
-					</Link>
-					<Link href="/antivirusandvirus/avira">
-						<Image alt="Avira" className="inline" height={50} src="/Avira.png" width={200} />
-					</Link>
+					<div className="mx-auto">
+						<Link href="/antivirusandvirus/kaspersky">
+							<Image alt="Kaspersky" height={50} src="/kaspersky.png" width={200} />
+						</Link>
+					</div>
+					<div className="mx-auto">
+						<Link href="/antivirusandvirus/avast">
+							<Image alt="Avast" height={50} src="/avast.png" width={200} />
+						</Link>
+					</div>
+					<div className="mx-auto">
+						<Link href="/antivirusandvirus/avira">
+							<Image alt="Avira" height={50} src="/Avira.png" width={200} />
+						</Link>
+					</div>
 				</div>
 			</div>
 			<div className="container mx-auto my-20">
