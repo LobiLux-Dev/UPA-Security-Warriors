@@ -1,21 +1,24 @@
 import { Section, Table, Title } from '@/components'
 
-const tableHeaders = ['', 'Telegram', 'WhatsApp']
+import type { TableProps } from '@/interfaces/table'
 
-const tableRows = [
-	['Dispositivos remotos', 'Sí', 'Sí'],
-	['Es gratuita', 'Sí', 'Sí'],
-	['Cifrado', 'Sí, End to end', 'Sí, End to end'],
-	['Eliminar mensajes', 'Sí', 'Sí'],
-	['Compatibilidad en SO', 'Sí', 'Sí'],
-	['Importar contactos', 'Sí', 'Sí'],
-	['Autenticación biométrica', 'Sí', 'Sí'],
-	['Sistema de bots', 'Sí (en los chats secretos)', 'No'],
-	['Es la más utilizada', 'No', 'Sí'],
-	['Es necesario tu número de teléfono', 'No, hay sistema de nicks', 'Sí'],
-	['Copias de seguridad', 'No', 'Sí (Google Drive o iCloud)'],
-	['Publicidad', 'No', 'No'],
-]
+const data: TableProps = {
+	columns: ['', 'Telegram', 'WhatsApp'],
+	rows: [
+		['Dispositivos remotos', 'Sí', 'Sí'],
+		['Es gratuita', 'Sí', 'Sí'],
+		['Cifrado', 'Sí, End to end', 'Sí, End to end'],
+		['Eliminar mensajes', 'Sí', 'Sí'],
+		['Compatibilidad en SO', 'Sí', 'Sí'],
+		['Importar contactos', 'Sí', 'Sí'],
+		['Autenticación biométrica', 'Sí', 'Sí'],
+		['Sistema de bots', 'Sí (en los chats secretos)', 'No'],
+		['Es la más utilizada', 'No', 'Sí'],
+		['Es necesario tu número de teléfono', 'No, hay sistema de nicks', 'Sí'],
+		['Copias de seguridad', 'No', 'Sí (Google Drive o iCloud)'],
+		['Publicidad', 'No', 'No'],
+	],
+}
 
 const SocialMediaRisksPage: React.FC = () => {
 	return (
@@ -38,7 +41,7 @@ const SocialMediaRisksPage: React.FC = () => {
 					</>
 				}
 			>
-				<Table columns={tableHeaders} rows={tableRows} />
+				<Table {...data} />
 			</Section>
 		</div>
 	)
