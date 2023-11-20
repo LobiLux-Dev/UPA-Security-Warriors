@@ -38,7 +38,7 @@ const SocialMediaRisksPage: React.FC = () => {
 					</>
 				}
 			>
-				<Table headers={tableHeaders} rows={tableRows} />
+				<Table columns={tableHeaders} rows={tableRows} />
 			</Section>
 		</div>
 	)

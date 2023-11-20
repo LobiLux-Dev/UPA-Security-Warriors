@@ -1,9 +1,6 @@
-interface Props {
-	as?: 'td' | 'th'
-	text: string
-}
+import type TableItemProps from '@/interfaces/table'
 
-export const TableItem: React.FC<Props> = ({ as: Element = 'td', text }) => {
+export const TableItem: React.FC<TableItemProps> = ({ as: Element = 'td', text }) => {
 	return (
 		<Element className="sm:px-6 sm:py-4" title={text}>
 			{text}
