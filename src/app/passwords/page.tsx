@@ -1,4 +1,4 @@
-import { Card } from '@/components/card'
+import { Card, CardContainer } from '@/components/card'
 import { Section, Title } from '@/components'
 
 const PasswordsPage: React.FC = () => {
@@ -9,10 +9,10 @@ const PasswordsPage: React.FC = () => {
 				text="La seguridad de las contraseñas es un componente crucial en la protección de cuentas y datos personales. Para mantener tus contraseñas seguras, deben ser lo suficientemente complejas para resistir ataques. Esto significa que deben incluir una combinación de letras mayúsculas y minúsculas, números y símbolos. Es importante que cada cuenta en línea tenga una contraseña única. Reutilizar contraseñas aumenta el riesgo de que, si una cuenta se ve comprometida, otras también puedan estar en peligro."
 				title="La Seguridad de Contraseñas: Protegiendo Cuentas y Datos Personales"
 			/>
-			<div className="container grid grid-cols-1 px-10 mx-auto gap-5 my-20 md:grid-cols-2">
+			<CardContainer>
 				<Card
 					title="¿Qué es una contraseña segura?"
-					image={{ alt: 'Hacker', height: 500, src: '/hacker.png', width: 500 }}
+					img={{ alt: 'Hacker', height: 263, src: '/img/png/hacker.png', width: 350 }}
 				>
 					<p>
 						Es la principal barrera que impide que te hackeen la mayoría de tus cuentas en línea. Sin prácticas
@@ -21,7 +21,7 @@ const PasswordsPage: React.FC = () => {
 					</p>
 				</Card>
 				<Card title="Recomendaciones">
-					<ul className="list-disc px-5">
+					<ul>
 						<li>Utilizar 12 caracteres o más, combinando letras, números y símbolos para mayor fortaleza.</li>
 						<li>Evitar información personal o palabras comunes y predecibles.</li>
 						<li>No reutilizar contraseñas en múltiples cuentas. Es mejor crear una única para cada cuenta.</li>
@@ -44,7 +44,7 @@ const PasswordsPage: React.FC = () => {
 						autenticación de dos factores. Mantener actualizado el software es igualmente fundamental.
 					</p>
 				</Card>
-			</div>
+			</CardContainer>
 		</div>
 	)
 }
