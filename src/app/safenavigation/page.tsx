@@ -14,7 +14,7 @@ const SafeNavigationPage: React.FC = () => {
 				text="Un sitio seguro en el ámbito de Internet se caracteriza por haber adoptado medidas de protección que resguardan los datos de los usuarios, asegurando su privacidad y seguridad durante su interacción. Además, busca preservar la integridad de la información, evitando cualquier manipulación o alteración de los datos transmitidos entre el usuario y el servidor."
 				title="¿Qué define a un lugar como seguro?"
 			/>
-			<CardContainer cols={2} rows={2}>
+			<CardContainer rows={2}>
 				<Card title="Importancia de una navegación segura" img={hackerImage}>
 					<p>
 						Estar protegido al navegar por internet se ha vuelto esencial debido a las diversas amenazas cibernéticas.
