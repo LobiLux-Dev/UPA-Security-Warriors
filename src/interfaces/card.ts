@@ -8,7 +8,7 @@ export interface CardProps {
 }
 
 export interface CardContainerProps {
-	children: React.ReactNode
+	cards: CardProps[]
 	cols?: number
 	rows?: number
 }
