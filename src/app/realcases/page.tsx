@@ -1,5 +1,7 @@
 import { Card, Section, Title } from '@/components'
 
+import { CardContainer } from '@/components/card'
+
 const RealCasesPage: React.FC = () => {
 	return (
 		<div>
@@ -8,8 +10,8 @@ const RealCasesPage: React.FC = () => {
 				title="Casos reales: Casos de ciberseguridad, privacidad, fraudes..."
 				text="Lee sobre casos reales de ciberseguridad, mantenimiento, contraseñas y más en nuestros artículos, descubre la importancia de contar con una sólida seguridad en tus dispositivos electrónicos."
 			/>
-			<div className="container grid grid-cols-1 px-10 mx-auto gap-5 my-20 md:grid-cols-2">
-				<Card title="Malware Tech" image={{ alt: 'Malware', height: 500, src: '/malware.png', width: 500 }}>
+			<CardContainer>
+				<Card title="Malware Tech" img={{ alt: 'Malware', height: 285, src: '/img/png/malware.png', width: 420 }}>
 					<p>
 						Una acción simple llevada a cabo por un joven de 22 años, conocido en internet como MalwareTech, logró
 						contener parte del ransomware, un virus troyano que secuestra la información de una computadora y demanda un
@@ -23,7 +25,10 @@ const RealCasesPage: React.FC = () => {
 						centro para esparcir el virus y desencadenar su daño.
 					</p>
 				</Card>
-				<Card title="Contraseña vulnerable" image={{ alt: 'Password', height: 500, src: '/password.png', width: 500 }}>
+				<Card
+					title="Contraseña vulnerable"
+					img={{ alt: 'Password', height: 285, src: '/img/png/password.png', width: 399 }}
+				>
 					<p>
 						Un usuario experimentó un incidente con su cuenta de Instagram debido a su práctica de mantener las mismas
 						contraseñas durante periodos prolongados o, en algunos casos, de no cambiarlas. El problema radicaba en la
@@ -34,7 +39,7 @@ const RealCasesPage: React.FC = () => {
 						infectó su PC con un virus.
 					</p>
 				</Card>
-			</div>
+			</CardContainer>
 		</div>
 	)
 }
