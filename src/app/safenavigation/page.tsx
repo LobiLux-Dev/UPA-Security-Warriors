@@ -1,30 +1,29 @@
 import { Card, Section, Title } from '@/components'
 
+import { CardContainer } from '@/components/card'
+import type { Image } from '@/interfaces/image'
+
+const hackerImage: Image = { alt: 'Hacker', height: 263, src: '/img/png/hacker.png', width: 350 }
+
 const SafeNavigationPage: React.FC = () => {
 	return (
 		<div>
 			<Title title="Navegación segura" />
 			<Section
-				image={{ alt: 'Candado', height: 500, src: '/lock.png', width: 500 }}
-				title="¿Qué define a un lugar como seguro?"
+				img={{ alt: 'Candado', height: 461, src: '/img/png/lock.png', width: 481 }}
 				text="Un sitio seguro en el ámbito de Internet se caracteriza por haber adoptado medidas de protección que resguardan los datos de los usuarios, asegurando su privacidad y seguridad durante su interacción. Además, busca preservar la integridad de la información, evitando cualquier manipulación o alteración de los datos transmitidos entre el usuario y el servidor."
+				title="¿Qué define a un lugar como seguro?"
 			/>
-			<div className="container grid grid-cols-1 px-10 mx-auto gap-5 my-20 md:grid-cols-2">
-				<Card
-					title="Importancia de una navegación segura"
-					image={{ alt: 'Hacker', height: 500, src: '/hacker.png', width: 500 }}
-				>
+			<CardContainer cols={2} rows={2}>
+				<Card title="Importancia de una navegación segura" img={hackerImage}>
 					<p>
 						Estar protegido al navegar por internet se ha vuelto esencial debido a las diversas amenazas cibernéticas.
 						Identificar una navegación segura es fundamental para resguardar tu privacidad, seguridad y datos
 						personales.
 					</p>
 				</Card>
-				<Card
-					title="¿Cuáles son las formas de identificarlo?"
-					image={{ alt: 'Hacker', height: 500, src: '/hacker.png', width: 500 }}
-				>
-					<ul className="list-disc px-5">
+				<Card title="¿Cuáles son las formas de identificarlo?" img={hackerImage}>
+					<ul>
 						<li>
 							Comprobar el uso de conexiones HTTPS en lugar de HTTP en los sitios web. La {'"s"'} indica que la
 							comunicación está encriptada y protegida.
@@ -36,7 +35,7 @@ const SafeNavigationPage: React.FC = () => {
 					</ul>
 				</Card>
 				<Card doubleColumn title="Recomendaciones">
-					<ul className="list-disc px-5">
+					<ul>
 						<li>
 							Evitar ingresar información confidencial o realizar transacciones en páginas sin certificado SSL (HTTPS).
 						</li>
@@ -50,7 +49,7 @@ const SafeNavigationPage: React.FC = () => {
 						</li>
 					</ul>
 				</Card>
-			</div>
+			</CardContainer>
 		</div>
 	)
 }
