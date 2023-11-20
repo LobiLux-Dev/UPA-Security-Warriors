@@ -13,13 +13,16 @@ const ProgrammerNames: string[] = [
 ]
 
 const logoLinks: LogoLinkProps[] = [
-	{ href: 'https://upa.edu.mx', img: { alt: 'UPA', src: '/UPA-Logo.png' } },
-	{ href: 'https://upa.edu.mx/oferta-educativa/convocatoria-2023', img: { alt: 'ISC', src: '/ISC-Logo.png' } },
+	{ href: 'https://upa.edu.mx', img: { alt: 'UPA', height: 185, src: '/img/png/UPA-Logo.png', width: 279 } },
+	{
+		href: 'https://upa.edu.mx/oferta-educativa/convocatoria-2023',
+		img: { alt: 'ISC', height: 157, src: '/img/png/ISC-Logo.png', width: 265 },
+	},
 ]
 
 const externalLinks: ExternalLinkProps[] = [
-	{ href: 'https://www.nextjs.org', text: 'Made with', img: { alt: 'Next', src: '/next.svg' } },
-	{ href: 'https://www.vercel.com', text: 'Deployed on', img: { alt: 'Vercel', src: '/vercel.svg' } },
+	{ href: 'https://www.nextjs.org', text: 'Made with', img: { alt: 'Next', height: 15, src: '/img/svg/next.svg' } },
+	{ href: 'https://www.vercel.com', text: 'Deployed on', img: { alt: 'Vercel', height: 17, src: '/img/svg/vercel.svg' } },
 ]
 
 export const Footer: React.FC = () => {
@@ -34,7 +37,7 @@ export const Footer: React.FC = () => {
 					))}
 				</div>
 				<hr className="border-gray-200 lg:my-8 my-6 sm:mx-auto" />
-				<div className="flex flex-col gap-2 text-center">
+				<div className="gap-2 grid grid-rows-2 text-center">
 					{externalLinks.map(externalLink => (
 						<ExternalLink {...externalLink} key={uuid()} />
 					))}

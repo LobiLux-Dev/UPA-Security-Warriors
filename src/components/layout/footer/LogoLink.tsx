@@ -7,7 +7,7 @@ export const LogoLink: React.FC<LogoLinkProps> = ({ img, href }) => {
 		<section className="mx-auto" title={img.alt}>
 			<div>
 				<a href={href} target="_blank">
-					<Image alt={img.alt} height={150} src={img.src} title={img.alt} width={250} />
+					<Image alt={img.alt} height={img.height} src={img.src} title={img.alt} width={img.width} />
 				</a>
 			</div>
 		</section>
