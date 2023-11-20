@@ -3,10 +3,11 @@ import { v4 as uuid } from 'uuid'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { Close, Menu } from '@/components/icons'
 import { MenuItem } from './'
-import { CloseSVG, MenuSVG } from '@/components/svg'
+import type { MenuItemProps } from '@/interfaces/layout/header'
 
-const menuItems = [
+const menuItems: MenuItemProps[] = [
 	{ text: 'Antivirus y Virus', href: '/antivirusandvirus' },
 	{ text: 'Contraseñas', href: '/passwords' },
 	{ text: 'Mantenimiento preventivo', href: '/preventivemaintenance' },
@@ -19,7 +20,7 @@ const menuItems = [
 export const Header: React.FC = () => {
 	const [isOpen, setIsOpen] = useState(false)
 
-	const handleToggle = () => {
+	const handleMenu = () => {
 		setIsOpen(!isOpen)
 	}
 
@@ -35,8 +36,8 @@ export const Header: React.FC = () => {
 							<Image alt="Logo" height={32} src="/favicon.ico" width={32} /> <span>UPA Security Warriors</span>
 						</Link>
 						<div className="flex">
-							<button className="focus:text-gray-400 focus:outline-none hover:text-gray-400" onClick={handleToggle}>
-								{!isOpen ? <MenuSVG /> : <CloseSVG />}
+							<button className="focus:text-gray-400 focus:outline-none hover:text-gray-400" onClick={handleMenu}>
+								{!isOpen ? <Menu /> : <Close />}
 							</button>
 						</div>
 					</div>
@@ -46,8 +47,8 @@ export const Header: React.FC = () => {
 						}`}
 					>
 						<div className="flex flex-col">
-							{menuItems.map(({ href, text }) => (
-								<MenuItem handleMenu={handleToggle} href={href} key={uuid()} text={text} />
+							{menuItems.map(menuItem => (
+								<MenuItem {...menuItem} handleMenu={handleMenu} key={uuid()} />
 							))}
 						</div>
 					</div>

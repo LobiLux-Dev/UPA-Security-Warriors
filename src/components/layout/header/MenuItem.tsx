@@ -1,12 +1,8 @@
 import Link from 'next/link'
 
-interface Props {
-	href: string
-	text: string
-	handleMenu: () => void
-}
+import type { MenuItemProps } from '@/interfaces/layout/header'
 
-export const MenuItem: React.FC<Props> = ({ href, text, handleMenu }) => {
+export const MenuItem: React.FC<MenuItemProps> = ({ handleMenu, href, text }) => {
 	return (
 		<Link
 			className="duration-300 hover:text-gray-400 my-2 transition-colors transform"
