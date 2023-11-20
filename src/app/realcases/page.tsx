@@ -3,7 +3,7 @@ import { Card, Section, Title } from '@/components'
 const RealCasesPage: React.FC = () => {
 	return (
 		<div>
-			<Title title='Casos reales' />
+			<Title title="Casos reales" />
 			<Section
 				title="Casos reales: Casos de ciberseguridad, privacidad, fraudes..."
 				text="Lee sobre casos reales de ciberseguridad, mantenimiento, contraseñas y más en nuestros artículos, descubre la importancia de contar con una sólida seguridad en tus dispositivos electrónicos."

@@ -1,17 +1,15 @@
 import Image from 'next/image'
 
-interface Props {
-	alt: string
-	href: string
-	src: string
-	text: string
-}
+import type { ExternalLinkProps } from '@/interfaces/layout/footer'
 
-export const ExternalLink: React.FC<Props> = ({ alt, href, src, text }) => {
+export const ExternalLink: React.FC<ExternalLinkProps> = ({ href, img, text }) => {
 	return (
-		<span className="block" title={`${text} ${alt}`}>
+		<span title={`${text} ${img.alt}`}>
 			<a href={href} target="_blank">
-				{text} <Image alt={alt} className="inline" height={60} src={src} width={60} />
+				<div className="flex gap-2 items-center justify-center">
+					<p>{text}</p>
+					<Image alt={img.alt} className="inline" height={75} src={img.src} width={75} />
+				</div>
 			</a>
 		</span>
 	)

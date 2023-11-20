@@ -1,17 +1,13 @@
 import Image from 'next/image'
 
-interface Props {
-	alt: string
-	href: string
-	src: string
-}
+import type { LogoLinkProps } from '@/interfaces/layout/footer'
 
-export const LogoLink: React.FC<Props> = ({ alt, href, src }) => {
+export const LogoLink: React.FC<LogoLinkProps> = ({ img, href }) => {
 	return (
-		<section className='mx-auto'>
+		<section className="mx-auto" title={img.alt}>
 			<div>
-				<a href={href}>
-					<Image alt={alt} height={150} src={src} title={alt} width={250} />
+				<a href={href} target='_blank'>
+					<Image alt={img.alt} height={150} src={img.src} title={img.alt} width={250} />
 				</a>
 			</div>
 		</section>
