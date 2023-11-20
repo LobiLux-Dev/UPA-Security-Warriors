@@ -1,8 +1,34 @@
+import { v4 as uuid } from 'uuid'
 import Image from 'next/image'
 import Link from 'next/link'
 
 import { Card } from '@/components/card'
 import { Section, Title } from '@/components'
+import type { LogoLinkProps } from '@/interfaces/layout/footer'
+
+const links: LogoLinkProps[] = [
+	{
+		href: '/antivirusandvirus/kaspersky',
+		img: {
+			alt: 'Kaspersky',
+			src: '/img/png/kaspersky.png',
+		},
+	},
+	{
+		href: '/antivirusandvirus/avast',
+		img: {
+			alt: 'Avast',
+			src: '/img/png/avast.png',
+		},
+	},
+	{
+		href: '/antivirusandvirus/avira',
+		img: {
+			alt: 'Avira',
+			src: '/img/png/avira.png',
+		},
+	},
+]
 
 const AntiVirusAndVirusPage: React.FC = () => {
 	return (
@@ -32,21 +58,14 @@ const AntiVirusAndVirusPage: React.FC = () => {
 			<div className="container mx-auto">
 				<h3 className="font-bold text-lg text-center mb-10">Te recomendamos los mejores antivirus</h3>
 				<div className="grid grid-cols-1 grid-rows-3 sm:grid-cols-3 sm:grid-rows-1 gap-5">
-					<div className="mx-auto">
-						<Link href="/antivirusandvirus/kaspersky">
-							<Image alt="Kaspersky" height={50} src="/kaspersky.png" width={200} />
-						</Link>
-					</div>
-					<div className="mx-auto">
-						<Link href="/antivirusandvirus/avast">
-							<Image alt="Avast" height={50} src="/avast.png" width={200} />
-						</Link>
-					</div>
-					<div className="mx-auto">
-						<Link href="/antivirusandvirus/avira">
-							<Image alt="Avira" height={50} src="/Avira.png" width={200} />
-						</Link>
-					</div>
+					{links.map(({ href, img }) => (
+						<div className="mx-auto" key={uuid()}>
+							<Link href={href}>
+								{/* eslint-disable-next-line jsx-a11y/alt-text */}
+								<Image {...img} height={57} width={206} />
+							</Link>
+						</div>
+					))}
 				</div>
 			</div>
 			<div className="container mx-auto my-20">
