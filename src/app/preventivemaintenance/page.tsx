@@ -1,14 +1,14 @@
-import { Card } from '@/components/card'
+import { Card, CardContainer } from '@/components/card'
 import { Section, Title } from '@/components'
 
 const PreventiveMaintenancePage: React.FC = () => {
 	return (
 		<div>
 			<Title title="Mantenimiento preventivo" />
-			<div className="container grid grid-cols-1 px-10 mx-auto gap-5 my-20 md:grid-cols-2">
+			<CardContainer>
 				<Card
 					title="Mantenimiento de hadware"
-					image={{ alt: 'Hardware', height: 500, src: '/hardware.png', width: 500 }}
+					img={{ alt: 'Hardware', height: 219, src: '/img/png/hardware.png', width: 408 }}
 				>
 					<p>
 						El mantenimiento del hardware implica principalmente la limpieza regular para eliminar el polvo acumulado
@@ -20,7 +20,7 @@ const PreventiveMaintenancePage: React.FC = () => {
 				</Card>
 				<Card
 					title="Mantenimiento de software"
-					image={{ alt: 'Software', height: 500, src: '/software.png', width: 500 }}
+					img={{ alt: 'Software', height: 310, src: '/img/png/software.png', width: 380 }}
 				>
 					<p>
 						Mantener el software de una computadora es fundamental para su eficiencia y seguridad. Esto abarca la
@@ -30,7 +30,7 @@ const PreventiveMaintenancePage: React.FC = () => {
 						estas pautas, se garantiza el óptimo funcionamiento de la computadora.
 					</p>
 				</Card>
-			</div>
+			</CardContainer>
 			<Section
 				text="Descubre qué implica el mantenimiento, cómo se aplica y cuál es la frecuencia recomendada para llevarlo a cabo."
 				textCenter
@@ -40,7 +40,7 @@ const PreventiveMaintenancePage: React.FC = () => {
 					</>
 				}
 			/>
-			<div className="container grid grid-cols-1 px-10 mx-auto gap-5 my-20 md:grid-cols-2">
+			<CardContainer>
 				<Card title="¿Qué es el mantenimiento preventivo?">
 					<p>
 						El mantenimiento preventivo en informática abarca acciones regulares como limpieza física, actualización de
@@ -56,7 +56,7 @@ const PreventiveMaintenancePage: React.FC = () => {
 						monitorización del rendimiento de forma regular y conforme a un calendario establecido previamente.
 					</p>
 				</Card>
-			</div>
+			</CardContainer>
 		</div>
 	)
 }
