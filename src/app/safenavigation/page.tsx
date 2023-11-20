@@ -1,6 +1,5 @@
-import { Card, Section, Title } from '@/components'
-
-import { CardContainer } from '@/components/card'
+import { Card, CardContainer } from '@/components/card'
+import { Section, Title } from '@/components'
 import type { Image } from '@/interfaces/image'
 
 const hackerImage: Image = { alt: 'Hacker', height: 263, src: '/img/png/hacker.png', width: 350 }

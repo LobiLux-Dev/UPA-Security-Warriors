@@ -1,6 +1,5 @@
-import { Card, Section, Title } from '@/components'
-
-import { CardContainer } from '@/components/card'
+import { Card, CardContainer } from '@/components/card'
+import { Section, Title } from '@/components'
 
 const RealCasesPage: React.FC = () => {
 	return (

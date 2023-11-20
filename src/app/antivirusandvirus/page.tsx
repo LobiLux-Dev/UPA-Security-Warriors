@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { Card, Section, Title } from '@/components'
+import { Card } from '@/components/card'
+import { Section, Title } from '@/components'
 
 const AntiVirusAndVirusPage: React.FC = () => {
 	return (
