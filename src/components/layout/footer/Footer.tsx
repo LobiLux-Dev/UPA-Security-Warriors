@@ -22,7 +22,11 @@ const logoLinks: LogoLinkProps[] = [
 
 const externalLinks: ExternalLinkProps[] = [
 	{ href: 'https://www.nextjs.org', text: 'Made with', img: { alt: 'Next', height: 15, src: '/img/svg/next.svg' } },
-	{ href: 'https://www.vercel.com', text: 'Deployed on', img: { alt: 'Vercel', height: 17, src: '/img/svg/vercel.svg' } },
+	{
+		href: 'https://www.vercel.com',
+		text: 'Deployed on',
+		img: { alt: 'Vercel', height: 17, src: '/img/svg/vercel.svg' },
+	},
 ]
 
 export const Footer: React.FC = () => {
