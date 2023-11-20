@@ -1,15 +1,15 @@
-import { Card } from '@/components/card'
+import { Card, CardContainer } from '@/components/card'
 import { Section, Title } from '@/components'
 
 const AntivirusandvirusAvastPage: React.FC = () => {
 	return (
 		<div>
-			<Title image={{ alt: 'Avast', height: 1080, src: '/avast-title.png', width: 1920 }} title="Kaspersky" />
+			<Title img={{ alt: 'Avast', height: 198, src: '/img/png/avast-title.png', width: 1440 }} />
 			<Section
-				title="Kaspersky Antivirus: Protección Avanzada para tu Ciberseguridad"
+				title="Avast Antivirus!: Protegiendo tu mundo digital"
 				text="En un mundo cada vez más interconectado, la seguridad informática se ha convertido en una prioridad fundamental. Con la proliferación de amenazas cibernéticas, que van desde virus y malware hasta ataques de phishing, tener un software antivirus sólido es esencial para proteger nuestros dispositivos y datos. Avast Antivirus destaca como una opción popular y confiable en esta lucha constante contra las amenazas digitales."
 			>
-				<div>
+				<div className='my-2'>
 					<h3 className="font-bold text-xl">Historia y Desarrollo</h3>
 					<p>
 						Avast, fundada en 1988 por Pavel Baudis y Eduard Kucera en la República Checa, ha evolucionado a lo largo de
@@ -18,7 +18,7 @@ const AntivirusandvirusAvastPage: React.FC = () => {
 						seguridad, con el antivirus Avast siendo su producto estrella.
 					</p>
 				</div>
-				<div>
+				<div className='my-2'>
 					<h3 className="font-bold text-xl">Interfaz de Usuario Intuitiva</h3>
 					<p>
 						La interfaz de Avast es conocida por su diseño amigable e intuitivo. Incluso para aquellos que no son
@@ -26,7 +26,7 @@ const AntivirusandvirusAvastPage: React.FC = () => {
 						tareas sencillas.
 					</p>
 				</div>
-				<div>
+				<div className='my-2'>
 					<h3 className="font-bold text-xl">Versiones Gratuita y de Pago</h3>
 					<p>
 						Avast ofrece una versión gratuita que proporciona una sólida protección contra malware básico. Para aquellos
@@ -44,7 +44,7 @@ const AntivirusandvirusAvastPage: React.FC = () => {
 				text="Conoce las ventajas, desventajas y el porque elegir  Avast"
 				textCenter
 			>
-				<div className="container grid grid-cols-1 px-10 mx-auto gap-5 my-20 md:grid-cols-2">
+				<CardContainer>
 					<Card title="Ventajas de Avast">
 						<ul className="list-disc px-5">
 							<li>Detecta y bloquea de virus y otro software malicioso.</li>
@@ -69,7 +69,7 @@ const AntivirusandvirusAvastPage: React.FC = () => {
 						contra malware, respaldada por un conjunto de funciones avanzadas y opciones de suscripción flexibles que se
 						adaptan a sus necesidades de seguridad en línea.
 					</Card>
-				</div>
+				</CardContainer>
 				<div className="flex items-center justify-center">
 					<a
 						className="bg-gradient-to-b from-primary to-secondary rounded-md py-2 px-32"
