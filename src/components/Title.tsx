@@ -1,20 +1,12 @@
 import Image from 'next/image'
 
-interface Props {
-	image?: {
-		alt: string
-		height: number
-		src: string
-		width: number
-	}
-	title: string
-}
+import type { TitleProps } from '@/interfaces/title'
 
-export const Title: React.FC<Props> = ({ image, title }) => {
+export const Title: React.FC<TitleProps> = ({ img, title }) => {
 	return (
 		<>
-			{image ? (
-				<Image alt={image.alt} className="w-full" height={image.height} src={image.src} width={image.width} />
+			{img ? (
+				<Image alt={img.alt} className="w-full" height={img.height} src={img.src} width={img.width} />
 			) : (
 				<div className="bg-secondary flex font-bold h-48 items-center justify-center text-6xl text-white">
 					<h1>{title}</h1>
